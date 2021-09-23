@@ -20,7 +20,7 @@ class MenuItemsController < ApplicationController
     private 
 
         def menuItem_params
-            params.require(:menuItem).permit(:name, :body)
+            params.require(:menuItem).permit(:name, :body, :image)
         end
 
 end
