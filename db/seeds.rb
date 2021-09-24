@@ -6,4 +6,4 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-    plate = MenuItem.create(name: 'burger', body: 'meat and cheese with bread')
+    plate = MenuItem.create(name: 'burger', body: 'meat and cheese with bread', image: 'picture')
