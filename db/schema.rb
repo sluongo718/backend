@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_23_185910) do
+ActiveRecord::Schema.define(version: 2021_09_29_201053) do
 
   create_table "menu_items", force: :cascade do |t|
     t.string "name"
@@ -18,6 +18,8 @@ ActiveRecord::Schema.define(version: 2021_09_23_185910) do
     t.string "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "category_type"
+    t.string "subcategory_type"
   end
 
 end
