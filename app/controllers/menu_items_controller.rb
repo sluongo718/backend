@@ -17,6 +17,12 @@ class MenuItemsController < ApplicationController
         end
     end
 
+    def destroy 
+        menuItem = MenuItem.find_by(id: params[:id])
+        menuItem.delete
+        render json: {menuItemId: menuItem.id}
+    end
+
     private 
 
         def menuItem_params
