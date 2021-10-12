@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_12_213634) do
+ActiveRecord::Schema.define(version: 2021_10_12_214341) do
 
   create_table "menu_items", force: :cascade do |t|
     t.string "name"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2021_10_12_213634) do
     t.string "category_type"
     t.string "subcategory_type"
     t.string "review"
+    t.string "party"
   end
 
 end
