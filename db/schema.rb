@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_12_214341) do
+ActiveRecord::Schema.define(version: 2021_10_13_064035) do
 
   create_table "menu_items", force: :cascade do |t|
     t.string "name"
@@ -20,8 +20,12 @@ ActiveRecord::Schema.define(version: 2021_10_12_214341) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "category_type"
     t.string "subcategory_type"
-    t.string "review"
-    t.string "party"
+  end
+
+  create_table "wait_lists", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
 end
